@@ -1,0 +1,150 @@
+/*
+* Header
+*/
+.Header {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    &__Picture {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        &__Logo {
+            transition: all 0.4s;
+            z-index: 10;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__Nav {
+        display: inline-block;
+        width: 100%;
+
+        &__Menu {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+
+            &__Item {
+                display: block;
+                width: 100%;
+
+                &__Link {
+                    display: block;
+                    line-height: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .Header {
+        &__Nav {
+            &__Menu {
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0;
+
+                &__Item {
+                    &__Link {
+                        font-size: 0.8rem;
+                        background-color: $mainColor;
+                        color: white;
+
+                        &:hover {
+                            box-shadow: 1px 1px 5px $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Header {
+        padding-bottom: 0;
+        display: flex;
+
+        &__Picture {
+            width: 20%;
+            display: inline-block;
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+            &__Logo {
+                width: 100%;
+                margin-bottom: 0;
+                max-width: 150px;
+            }
+        }
+
+        &__Nav {
+            width: 78%;
+            margin-left: 1rem;
+            margin-right: 0;
+
+            &__Menu {
+                &__Item {
+                    &__Link {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .Header {
+        margin-top: 2rem;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        &__Picture {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: end;
+
+            &__Logo {
+                width: 95%;
+                max-width: 200px;
+            }
+        }
+
+        &__Nav {
+            &__Menu {
+                &__Item {
+                    &__Link {
+                        font-size: .95rem;
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Header {
+        &__Picture {
+            &__Logo {
+                max-width: 240px;
+            }
+        }
+    }
+}

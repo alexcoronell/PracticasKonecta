@@ -1,0 +1,13 @@
+@import 'generic/_reset';
+@import 'fonts/fonts';
+@import 'headerMenu/headerMenu';
+@import 'generic/main';
+@import 'footer/footer';
+
+/*
+* Páginas
+*/
+@import 'pages/mainPage';
+@import 'pages/quienesSomos';
+@import 'pages/preguntasFrecuentes';
+@import 'pages/contactenos';

@@ -1,0 +1,14 @@
+/*
+* Generales
+*/
+.Main {
+    width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+    .Main {
+        margin: 2.5rem auto;
+    }
+}

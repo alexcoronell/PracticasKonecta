@@ -1,0 +1,10 @@
+.Footer {
+    padding: 1rem 0;
+    background-color: $mainColor;
+    color: white;
+
+    &__Main {
+        text-align: center;
+        width: 100%;
+    }
+}
